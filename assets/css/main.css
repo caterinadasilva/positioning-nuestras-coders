@@ -21,6 +21,7 @@ border: 0;
 font-size: 100%;
 font: inherit;
 vertical-align: baseline;
+box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -56,14 +57,15 @@ max-width: 960px;
 margin: 0 auto;
 }
 header {
-background-color: #FC8A15;
+background-color: #FCB425;
 color: white;
 padding: 5em 0 2em;
-margin-bottom: 5em;
+margin-bottom: 3em;
 text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Inconsolata', Courier, monospaced;
+font-family: 'Inconsolata', Courier, monospace;
+font-weight: bolder;
 }
 h1 {
 font-size: 3rem;
@@ -71,16 +73,65 @@ font-size: 3rem;
 h2 {
 font-size: 2rem;
 }
+h3 {
+font-size: 1.7rem;
+}
+h4 {
+font-size: 1.3rem;
+}
 small {
 font-size: .8rem;
-color: #FC8A15;
+color: #FCB425;
 }
 footer {
 display: block;
 width: 100%;
-margin: 5em 0 0;
+margin: 2em 0 0;
 padding: 0 0 2em;
 overflow: hidden;
 text-align: center;
 }
 /* Especial */
+#coders {
+overflow: hidden;
+}
+#coders h3 {
+position: relative;
+margin: 0 .5em 2em;
+}
+#coders h3:after {
+content: '';
+width: 100px;
+height: 5px;
+position: absolute;
+bottom: -1em;
+left: 0;
+background-color: #000;
+}
+.caja {
+width: 30%;
+float: left;
+margin: 1.5%;
+background-color: #000;
+cursor: pointer;
+max-height: 280px;
+overflow: hidden;
+position: relative;
+}
+.caja img {
+width: 100%;
+height: auto;
+opacity: .4;
+transition: .5s all ease;
+}
+.caja:hover img {
+opacity: 1;
+transition: .5s all ease;
+}
+.caja h4 {
+color: #fff;
+position: absolute;
+right: 1em;
+bottom: 1em;
+}
+
